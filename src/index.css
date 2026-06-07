@@ -1,0 +1,159 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+  --bg:#020617;
+  --card:#0f172a;
+
+  --text:#f8fafc;
+  --muted:#94a3b8;
+
+  --primary:#38bdf8;
+  --secondary:#8b5cf6;
+
+  --border:#1e293b;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  overflow-x:hidden;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+ul{
+  list-style:none;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+section{
+  padding:100px 8%;
+}
+
+.section-title{
+  margin-bottom:3rem;
+}
+
+.section-title p{
+  color:var(--primary);
+  font-weight:600;
+  margin-bottom:.5rem;
+}
+
+.section-title h2{
+  font-size:clamp(2rem,5vw,3rem);
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+  width:8px;
+}
+
+::-webkit-scrollbar-track{
+  background:var(--bg);
+}
+
+::-webkit-scrollbar-thumb{
+  background:var(--primary);
+  border-radius:10px;
+}
+
+/* Selection */
+
+::selection{
+  background:var(--primary);
+  color:white;
+}
+
+/* Gradient Text */
+
+.gradient-text{
+  background:linear-gradient(
+    90deg,
+    var(--primary),
+    var(--secondary)
+  );
+
+  
+  -webkit-text-fill-color:transparent;
+}
+
+/* Glow Background */
+
+.bg-blur{
+  position:fixed;
+  width:500px;
+  height:500px;
+  border-radius:50%;
+  background:var(--primary);
+  filter:blur(180px);
+  opacity:.08;
+  z-index:-1;
+  top:-200px;
+  right:-150px;
+}
+
+.bg-blur-2{
+  position:fixed;
+  width:450px;
+  height:450px;
+  border-radius:50%;
+  background:var(--secondary);
+  filter:blur(180px);
+  opacity:.08;
+  z-index:-1;
+  bottom:-150px;
+  left:-100px;
+}
+
+/* Animation */
+
+@keyframes fadeUp{
+
+  from{
+    opacity:0;
+    transform:translateY(30px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+.fade-up{
+  animation:fadeUp .8s ease;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+  section{
+    padding:80px 6%;
+  }
+
+  .section-title h2{
+    font-size:2rem;
+  }
+}

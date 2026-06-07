@@ -1,0 +1,43 @@
+.contact{
+  padding:100px 8%;
+  text-align:center;
+}
+
+.contact-container{
+
+  margin-top:3rem;
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:1.5rem;
+
+  flex-wrap:wrap;
+}
+
+.contact-container a{
+
+  text-decoration:none;
+
+  color:white;
+
+  background:var(--card);
+
+  border:1px solid var(--border);
+
+  padding:1rem 1.5rem;
+
+  border-radius:12px;
+
+  transition:.3s;
+}
+
+.contact-container a:hover{
+
+  transform:translateY(-5px);
+
+  border-color:var(--accent);
+
+  color:var(--accent);
+}
