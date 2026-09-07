@@ -1,6 +1,6 @@
 import "./First.css";
 import myImage from "./assets/Me.jpeg";
-import resume from "./assets/ai_resume_Tamnna.pdf";
+import resume from "./assets/Ai_resume_Tamnna.pdf";
 
 export default function First() {
   return (

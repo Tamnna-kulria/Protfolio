@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-import Hero from "./First";
+import Hero from "./First"
 import About from "./About";
 import Skills from "./Skill";
 import Experience from "./Experience";
