@@ -4,6 +4,7 @@ const skills = [
   "C",
   "C++",
   "JavaScript",
+  "GEN ai",
   "React.js",
   "Node.js",
   "Express.js",

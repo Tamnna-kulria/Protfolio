@@ -2,8 +2,18 @@ import "./Projects.css";
 import financeImg from './assets/finance.png';
 import agriImg from "./assets/agri.png"
 import lmsImg from "./assets/lms.png"
+import student from "./assets/stu.png"
 
 const projects = [
+{
+  title: "Smart Hostel Gate Pass",
+  image: student,
+  description:
+    "A smart hostel management system for digital gate pass requests, parent approval, warden verification, QR-based entry tracking, and AI-powered risk analysis.",
+  tech: ["React", "Node.js", "Express.js", "MongoDB", "AI"],
+  github: "https://github.com/Tamnna-kulria/Hostel_gate_pass",
+  live: "https://hostel-gate-pass-nine.vercel.app/login",
+},
   {
     title: "Finance Tracker",
     image: financeImg,
@@ -25,11 +35,11 @@ const projects = [
   },
 
   {
-    title: "Crime Report Classifier",
+    title: "Learning Management System",
     image: lmsImg,
     description:
-      "A Python-based project that classifies crime reports and suggests relevant IPC sections.",
-    tech: ["Python", "Tkinter"],
+      "A web-based platform for managing courses, learning materials, assignments, and student progress.",
+    tech: ["HTML","CSS", "JavaScript"],
     github: "https://github.com/Tamnna-kulria/LMS",
     live: "https://lms-theta-one.vercel.app/",
   },
